@@ -59,8 +59,50 @@ const JapaneseStudyApp = () => {
       { japanese: 'SHIKEN', english: 'Test/Quiz/Exam' },
       { japanese: 'KEITAI DENWA', english: 'Cellular phone' },
       { japanese: 'JUGYOU', english: 'Class' }
+    ],
+    days: [
+      { japanese: 'NICHIYOUBI', english: 'Sunday' },
+      { japanese: 'GETSUYOUBI', english: 'Monday' },
+      { japanese: 'KAYOUBI', english: 'Tuesday' },
+      { japanese: 'SUIYOUBI', english: 'Wednesday' },
+      { japanese: 'MOKUYOUBI', english: 'Thursday' },
+      { japanese: 'KINYOUBI', english: 'Friday' },
+      { japanese: 'DOYOUBI', english: 'Saturday' },
+      { japanese: 'KYOU', english: 'Today' },
+      { japanese: 'ASHITA', english: 'Tomorrow' },
+      { japanese: 'KONGETSU', english: 'This Month' },
+      { japanese: 'RAIGETSU', english: 'Next Month' },
+      { japanese: 'ATO DE', english: 'Later' },
+      { japanese: 'RAISHUU', english: 'Next Week' },
+      { japanese: 'KONSHUU', english: 'This Week' },
+      { japanese: 'RAINEN', english: 'Next Year' },
+      { japanese: 'KOTOSHI', english: 'This Year' }
+    ],
+    numbers: [
+      { japanese: 'ICHI', english: '1' },
+      { japanese: 'NI', english: '2' },
+      { japanese: 'SAN', english: '3' },
+      { japanese: 'SHI/YO', english: '4' },
+      { japanese: 'GO', english: '5' },
+      { japanese: 'ROKU', english: '6' },
+      { japanese: 'NANA/SHICHI', english: '7' },
+      { japanese: 'HACHI', english: '8' },
+      { japanese: 'KYUU', english: '9' },
+      { japanese: 'JUU', english: '10' }
+    ],
+    particles: [
+      { japanese: 'WA', english: 'Topic/Subject marker' },
+      { japanese: 'GA', english: 'Subject/Existence marker' },
+      { japanese: 'WO', english: 'Object marker' },
+      { japanese: 'DE', english: 'Place or means' },
+      { japanese: 'TO', english: 'Connecting nouns' },
+      { japanese: 'NI', english: 'Destination, time' },
+      { japanese: 'KARA', english: 'Starting point or cause' },
+      { japanese: 'MADE', english: 'Endpoint' },
+      { japanese: 'MO', english: 'Also, too' },
+      { japanese: 'YORI', english: 'Comparison marker' },
+      { japanese: 'DEWA/JA', english: 'Negative forms' }
     ]
-    // Add days, numbers, particles as needed
   };
 
   const grammarExamples = [
