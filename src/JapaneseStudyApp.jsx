@@ -218,27 +218,43 @@ const JapaneseStudyApp = () => {
       </div>
     );
   }
+// ---------------- GRAMMAR ----------------
+if (mode === 'grammar') {
+  return (
+    <div className="wrapper">
+      <div className="content">
+        {/* BACK BUTTON */}
+        <button 
+          onClick={() => setMode('menu')}
+          style={{
+            marginBottom: '1rem',
+            padding: '0.5rem 1rem',
+            borderRadius: '0.5rem',
+            border: '1px solid #f97316',
+            backgroundColor: '#fff',
+            color: '#f97316',
+            fontWeight: 'bold',
+            cursor: 'pointer'
+          }}
+        >
+          ← Back to Menu
+        </button>
 
-  // ---------------- GRAMMAR ----------------
-  if (mode === 'grammar') {
-    return (
-      <div className="wrapper">
-        <div className="content">
-          <button onClick={() => setMode('menu')}>← Back to Menu</button>
-          <h2>Grammar Patterns</h2>
-          <div style={{ display: 'flex', flexDirection: 'column', gap: '1rem', width: '100%' }}>
-            {grammarExamples.map((item, idx) => (
-              <div key={idx} className="card">
-                <div style={{ fontWeight: 'bold' }}>{item.pattern}</div>
-                <div style={{ fontSize: '1.2rem' }}>{item.example}</div>
-                <div style={{ fontStyle: 'italic' }}>{item.translation}</div>
-              </div>
-            ))}
-          </div>
+        <h2>Grammar Patterns</h2>
+
+        <div style={{ display: 'flex', flexDirection: 'column', gap: '1rem', width: '100%', maxWidth: '600px', margin: '0 auto' }}>
+          {grammarExamples.map((item, idx) => (
+            <div key={idx} className="card" style={{ padding: '1rem', borderRadius: '1rem', backgroundColor: '#fff', textAlign: 'center', border: '1px solid #f97316' }}>
+              <div style={{ fontWeight: 'bold', fontSize: '1.2rem', marginBottom: '0.5rem' }}>{item.pattern}</div>
+              <div style={{ fontSize: '1rem', marginBottom: '0.5rem' }}>{item.example}</div>
+              <div style={{ fontStyle: 'italic', fontSize: '0.9rem' }}>{item.translation}</div>
+            </div>
+          ))}
         </div>
       </div>
-    );
-  }
+    </div>
+  );
+}
 
   // ---------------- CHAT ----------------
   if (mode === 'chat') {
